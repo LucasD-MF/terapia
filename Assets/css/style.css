@@ -1,0 +1,347 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F7F5;
+    color: #2f3e36;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(107, 142, 122, 0.72), rgba(107, 142, 122, 0.92)),
+        url('../image/bg-texture.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 35px;
+}
+
+.hero-text {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* BOTÃO PADRÃO */
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: #C0846A;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #a86c54;
+    transform: translateY(-4px);
+}
+
+/* ABOUT */
+
+.about {
+    padding: 80px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.photo {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 🔥 IMAGEM COM 2 CANTOS PONTUDOS */
+
+.photo-placeholder {
+    width: 100%;
+    max-width: 420px;
+    height: 420px;
+
+    /* dois cantos pontudos na diagonal */
+    border-radius: 40px 0 40px 0;
+
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    background-color: #dbe5df;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #6B8E7A;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+/* SEÇÕES */
+
+.who,
+.how {
+    background-color: #e9f0ec;
+    padding: 70px 0;
+}
+
+.career,
+.connect,
+.video-section {
+    padding: 70px 0;
+}
+
+.who h2,
+.how h2,
+.career h2,
+.connect h2,
+.video-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6B8E7A;
+    margin-bottom: 20px;
+}
+
+/* QUOTE */
+
+.quote {
+    padding: 80px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote p {
+    font-size: 22px;
+    color: #6B8E7A;
+}
+
+/* CTA */
+
+.cta {
+    background-color: #6B8E7A;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    margin-bottom: 30px;
+}
+
+/* CONNECT */
+
+.connect {
+    text-align: center;
+}
+
+.connect p {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.blog-link,
+.instagram-link {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.blog-link {
+    background-color: #6B8E7A;
+    color: white;
+}
+
+.blog-link:hover {
+    background-color: #5a7766;
+    transform: translateY(-3px);
+}
+
+.instagram-link {
+    background-color: #C0846A;
+    color: white;
+}
+
+.instagram-link:hover {
+    background-color: #a86c54;
+    transform: translateY(-3px);
+}
+
+/* CARROSSEL */
+
+.slider-section {
+    margin: 60px 0;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 480px;
+    max-width: 90%;
+    height: 620px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* VIDEO */
+
+.video-section {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #6B8E7A;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 900px) {
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-placeholder {
+        height: 320px;
+    }
+
+    .carousel {
+        width: 420px;
+        height: 560px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .photo-placeholder {
+        height: 260px;
+    }
+
+    .carousel {
+        width: 95%;
+        height: 520px;
+    }
+
+    .connect-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .photo-placeholder {
+        height: 220px;
+    }
+
+    .carousel {
+        height: 480px;
+    }
+}
