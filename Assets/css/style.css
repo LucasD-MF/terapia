@@ -23,7 +23,7 @@ body {
 
 .hero {
     background: linear-gradient(rgba(107, 142, 122, 0.72), rgba(107, 142, 122, 0.92)),
-        url('../image/bg-texture.jpg');
+        url('../image/bg-texture2.jpg');
     background-size: cover;
     background-position: center;
     padding: 80px 0;
